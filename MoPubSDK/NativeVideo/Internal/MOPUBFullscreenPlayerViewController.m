@@ -30,7 +30,7 @@ static CGFloat const kPrivacyIconSize = 16.0f;
 static CGFloat const kCloseButtonRightMargin = 16.0f;
 static CGFloat const kDefaultButtonTouchAreaInsets = 10.0f;
 
-static NSString * const kCloseButtonImage = @"MPCloseBtn";
+static NSString * const kCloseButtonImage = @"MPCloseBtn@2x.png";
 static NSString * const kCtaButtonTitleText = @"Learn More";
 static CGFloat const kCtaButtonTopMarginPortrait = 15.0f;
 static CGFloat const kCtaButtonTrailingMarginLandscape = 15.0f;
@@ -114,7 +114,8 @@ static CGFloat const kStallSpinnerSize = 35.0f;
     [self.view addSubview:self.privacyButton];
 
     self.closeButton = [MPExtendedHitBoxButton buttonWithType:UIButtonTypeCustom];
-    [self.closeButton setImage:[UIImage  imageForAsset:kCloseButtonImage] forState:UIControlStateNormal];
+    [self.closeButton setImage:[UIImage  imageWithContentsOfFile:kCloseButtonImage] forState:UIControlStateNormal];
+    NSLog(@"tttttttttt %@", [UIImage  imageWithContentsOfFile:kCloseButtonImage]);
     [self.closeButton addTarget:self action:@selector(closeButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     self.closeButton.touchAreaInsets = UIEdgeInsetsMake(kDefaultButtonTouchAreaInsets, kDefaultButtonTouchAreaInsets, kDefaultButtonTouchAreaInsets, kDefaultButtonTouchAreaInsets);
     [self.closeButton sizeToFit];
