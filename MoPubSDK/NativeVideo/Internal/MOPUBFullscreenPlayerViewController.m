@@ -22,6 +22,7 @@
 #import "MOPUBActivityIndicatorView.h"
 #import "UIView+MPAdditions.h"
 #import "UIColor+MPAdditions.h"
+#import "UIImage+MPAdditions.h"
 
 static CGFloat const kPrivacyIconFullscreenLeftMargin = 16.0f;
 static CGFloat const kPrivacyIconFullscreenTopMargin = 16.0f;
@@ -29,7 +30,7 @@ static CGFloat const kPrivacyIconSize = 16.0f;
 static CGFloat const kCloseButtonRightMargin = 16.0f;
 static CGFloat const kDefaultButtonTouchAreaInsets = 10.0f;
 
-static NSString * const kCloseButtonImage = @"MPCloseBtn.png";
+static NSString * const kCloseButtonImage = @"MPCloseBtn";
 static NSString * const kCtaButtonTitleText = @"Learn More";
 static CGFloat const kCtaButtonTopMarginPortrait = 15.0f;
 static CGFloat const kCtaButtonTrailingMarginLandscape = 15.0f;
@@ -113,7 +114,7 @@ static CGFloat const kStallSpinnerSize = 35.0f;
     [self.view addSubview:self.privacyButton];
 
     self.closeButton = [MPExtendedHitBoxButton buttonWithType:UIButtonTypeCustom];
-    [self.closeButton setImage:[UIImage imageNamed:MPResourcePathForResource(kCloseButtonImage)] forState:UIControlStateNormal];
+    [self.closeButton setImage:[UIImage  imageForAsset:kCloseButtonImage] forState:UIControlStateNormal];
     [self.closeButton addTarget:self action:@selector(closeButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     self.closeButton.touchAreaInsets = UIEdgeInsetsMake(kDefaultButtonTouchAreaInsets, kDefaultButtonTouchAreaInsets, kDefaultButtonTouchAreaInsets, kDefaultButtonTouchAreaInsets);
     [self.closeButton sizeToFit];
@@ -169,7 +170,7 @@ static CGFloat const kStallSpinnerSize = 35.0f;
     }
     // Default to built in MoPub privacy icon.
     else {
-        [button setImage:[UIImage imageNamed:MPResourcePathForResource(kPrivacyIconImageName)] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageWithContentsOfFile:MPResourcePathForResource(kPrivacyIconImageName)] forState:UIControlStateNormal];
     }
 }
 

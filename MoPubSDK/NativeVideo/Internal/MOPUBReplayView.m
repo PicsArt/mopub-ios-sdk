@@ -11,7 +11,7 @@
 #import "UIView+MPAdditions.h"
 #import "UIColor+MPAdditions.h"
 
-static NSString * const kPlayButtonImage = @"MPPlayBtn.png";
+static NSString * const kPlayButtonImage = @"MPPlayBtn@2x.png";
 static NSString * const kOverlayBgColor = @"#000000";
 static CGFloat const kOverlayAlpha = 0.5f;
 
@@ -35,7 +35,7 @@ static CGFloat const kOverlayAlpha = 0.5f;
         }
 
         _replayVideoButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_replayVideoButton setImage:[UIImage imageNamed:MPResourcePathForResource(kPlayButtonImage)] forState:UIControlStateNormal];
+        [_replayVideoButton setImage:[UIImage imageWithContentsOfFile:MPResourcePathForResource(kPlayButtonImage)] forState:UIControlStateNormal];
         [_replayVideoButton addTarget:self action:@selector(replayButtonTapped) forControlEvents:UIControlEventTouchUpInside];
         [_replayVideoButton sizeToFit];
         [self addSubview:_replayVideoButton];

@@ -25,8 +25,8 @@
 
 #define kDefaultVideoAspectRatio 16.0f/9.0f
 
-static NSString * const kMutedButtonImage = @"MPMutedBtn.png";
-static NSString * const kUnmutedButtonImage = @"MPUnmutedBtn.png";
+static NSString * const kMutedButtonImage = @"MPMutedBtn@2x.png";
+static NSString * const kUnmutedButtonImage = @"MPUnmutedBtn@2x.png";
 
 static NSString * const kTracksKey = @"tracks";
 static NSString * const kPlayableKey = @"playable";
@@ -249,8 +249,8 @@ static const double kVideoFinishedBufferingAllowedError = 0.1;
 {
     if (!self.muteButton) {
         self.muteButton = [MPExtendedHitBoxButton buttonWithType:UIButtonTypeCustom];
-        [self.muteButton setImage:[UIImage imageNamed:MPResourcePathForResource(kMutedButtonImage)] forState:UIControlStateNormal];
-        [self.muteButton setImage:[UIImage imageNamed:MPResourcePathForResource(kUnmutedButtonImage)] forState:UIControlStateSelected];
+        [self.muteButton setImage:[UIImage imageWithContentsOfFile:MPResourcePathForResource(kMutedButtonImage)] forState:UIControlStateNormal];
+        [self.muteButton setImage:[UIImage imageWithContentsOfFile:MPResourcePathForResource(kUnmutedButtonImage)] forState:UIControlStateSelected];
         [self.muteButton addTarget:self action:@selector(muteButtonTapped) forControlEvents:UIControlEventTouchUpInside];
         self.muteButton.touchAreaInsets = UIEdgeInsetsMake(kMuteIconInlineModeTouchAreaInsets, kMuteIconInlineModeTouchAreaInsets, kMuteIconInlineModeTouchAreaInsets, kMuteIconInlineModeTouchAreaInsets);
         [self.muteButton sizeToFit];
