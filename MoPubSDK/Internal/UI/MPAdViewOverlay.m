@@ -68,6 +68,7 @@ static CGFloat const kSkipButtonDimension = 50; // 50x50, same size as the Close
         [self addSubview:_closeButton];
         [self setCloseButtonLocation:MPAdViewCloseButtonLocationTopRight];
         [self setCloseButtonType:MPAdViewCloseButtonTypeImageButton];
+        _closeButton.backgroundColor = [UIColor greenColor];
     }
     return self;
 }

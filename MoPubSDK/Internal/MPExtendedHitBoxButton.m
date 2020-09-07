@@ -10,6 +10,15 @@
 
 @implementation MPExtendedHitBoxButton
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.backgroundColor = [UIColor redColor];
+    }
+    return self;
+}
+
 #pragma mark - Overrides
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
