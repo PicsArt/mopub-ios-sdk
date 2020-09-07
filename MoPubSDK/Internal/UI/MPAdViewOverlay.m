@@ -167,15 +167,16 @@ static CGFloat const kSkipButtonDimension = 50; // 50x50, same size as the Close
 - (void)setCloseButtonType:(MPAdViewCloseButtonType)closeButtonType {
     _closeButtonType = closeButtonType;
     
+    NSLog(@"MoPub SDK - closeButtonType = %@", @(closeButtonType));
     switch (closeButtonType) {
         case MPAdViewCloseButtonTypeNone:
             self.closeButton.hidden = YES;
             break;
         case MPAdViewCloseButtonTypeInvisibleButton:
              // the close button hit box is still effective even without the button images
-            self.closeButton.hidden = NO;
-            [self.closeButton setImage:nil forState:UIControlStateNormal];
-            break;
+//            self.closeButton.hidden = NO;
+//            [self.closeButton setImage:nil forState:UIControlStateNormal];
+//            break;
         case MPAdViewCloseButtonTypeImageButton:
             self.skipButton.hidden = YES; // avoid overlapping
             self.timerView.hidden = YES; // avoid overlapping

@@ -15,6 +15,7 @@
     self = [super init];
     if (self) {
         self.backgroundColor = [UIColor redColor];
+        NSLog(@"MoPub SDK - MPExtendedHitBoxButton init %@", self);
     }
     return self;
 }
@@ -32,6 +33,12 @@
                         bounds.size.width + touchAreaInsets.left + touchAreaInsets.right,
                         bounds.size.height + touchAreaInsets.top + touchAreaInsets.bottom);
     return CGRectContainsPoint(bounds, point);
+}
+
+- (void)willMoveToSuperview:(UIView *)newSuperview {
+    if (newSuperview) {
+        self.backgroundColor = [UIColor redColor];
+    }
 }
 
 @end
