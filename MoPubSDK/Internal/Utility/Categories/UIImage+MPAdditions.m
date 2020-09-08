@@ -15,7 +15,7 @@ MPImageAsset const kMPImageAssetSkipButton = @"MPSkipButton";
 @implementation UIImage (MPAdditions)
 
 + (UIImage *)imageForAsset:(MPImageAsset)asset {
-    return [UIImage imageNamed:asset inBundle:NSBundle.mopubResourceBundle compatibleWithTraitCollection:nil];
+    return [UIImage imageNamed:asset];
 }
 
 @end
