@@ -7,6 +7,7 @@
 //
 
 #import "MPExtendedHitBoxButton.h"
+#import "MPLogging.h"
 
 @implementation MPExtendedHitBoxButton
 
@@ -15,7 +16,11 @@
     self = [super init];
     if (self) {
         self.backgroundColor = [UIColor redColor];
+        self.accessibilityValue = @"TEST MPExtendedHitBoxButton WITH NO BACKGROUND COLOR";
         NSLog(@"MoPub SDK - MPExtendedHitBoxButton init %@", self);
+        MPLogInfo(@"MoPub SDK - MPExtendedHitBoxButton init %@", self);
+        MPLogDebug(@"MoPub SDK - MPExtendedHitBoxButton init %@", self);
+
     }
     return self;
 }
@@ -37,6 +42,9 @@
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     if (newSuperview) {
+        NSLog(@"MoPub SDK - MPExtendedHitBoxButton added to superview");
+        MPLogInfo(@"MoPub SDK - MPExtendedHitBoxButton added to superview");
+        MPLogDebug(@"MoPub SDK - MPExtendedHitBoxButton added to superview");
         self.backgroundColor = [UIColor redColor];
     }
 }

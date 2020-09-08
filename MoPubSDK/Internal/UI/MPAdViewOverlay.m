@@ -73,6 +73,11 @@ static CGFloat const kSkipButtonDimension = 50; // 50x50, same size as the Close
     return self;
 }
 
+- (void)didMoveToSuperview {
+    self.backgroundColor = [UIColor blueColor];
+    self.accessibilityValue = @"Overlay Test";
+}
+
 + (CGRect)closeButtonFrameForAdSize:(CGSize)adSize atLocation:(MPAdViewCloseButtonLocation)location {
     CGRect closeButtonFrame = CGRectMake(0, 0, kMPAdViewCloseButtonSize.width, kMPAdViewCloseButtonSize.height);
     
@@ -168,6 +173,9 @@ static CGFloat const kSkipButtonDimension = 50; // 50x50, same size as the Close
     _closeButtonType = closeButtonType;
     
     NSLog(@"MoPub SDK - closeButtonType = %@", @(closeButtonType));
+    MPLogInfo(@"MoPub SDK - closeButtonType = %@", @(closeButtonType));
+    MPLogDebug(@"MoPub SDK - closeButtonType = %@", @(closeButtonType));
+
     switch (closeButtonType) {
         case MPAdViewCloseButtonTypeNone:
             self.closeButton.hidden = YES;
