@@ -395,6 +395,9 @@
 		2AFEE726225BC38400DD82C8 /* MPImpressionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFEE722225BC38400DD82C8 /* MPImpressionData.m */; };
 		2AFEE727225C130B00DD82C8 /* MPMoPubAd.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFEE720225BC22300DD82C8 /* MPMoPubAd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AFF1BA71EC289E600495994 /* MPRealTimeTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF1BA61EC289E600495994 /* MPRealTimeTimerTests.m */; };
+		B06C8F8C2507C3390042B7F3 /* MPCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06C8F892507C3390042B7F3 /* MPCloseButtonX@2x.png */; };
+		B06C8F8D2507C3390042B7F3 /* MPCloseButtonX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06C8F8A2507C3390042B7F3 /* MPCloseButtonX@3x.png */; };
+		B06C8F8E2507C3390042B7F3 /* MPCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = B06C8F8B2507C3390042B7F3 /* MPCloseButtonX.png */; };
 		B23C3B4F1E353DD90003D79E /* MPVideoConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B23C3B4E1E353DD90003D79E /* MPVideoConfigTests.m */; };
 		B23C3B581E3544590003D79E /* linear-tracking.xml in Resources */ = {isa = PBXBuildFile; fileRef = B23C3B521E353FD20003D79E /* linear-tracking.xml */; };
 		B23C3B5B1E35709D0003D79E /* linear-tracking-no-event.xml in Resources */ = {isa = PBXBuildFile; fileRef = B23C3B5A1E35709D0003D79E /* linear-tracking-no-event.xml */; };
@@ -1215,6 +1218,9 @@
 		AEF9D535171CA895005AAA5A /* MPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPConstants.h; sourceTree = "<group>"; };
 		AEF9D536171CA895005AAA5A /* MPInterstitialAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPInterstitialAdController.h; sourceTree = "<group>"; };
 		AEF9D537171CA895005AAA5A /* MPInterstitialAdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPInterstitialAdController.m; sourceTree = "<group>"; };
+		B06C8F892507C3390042B7F3 /* MPCloseButtonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@2x.png"; sourceTree = "<group>"; };
+		B06C8F8A2507C3390042B7F3 /* MPCloseButtonX@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@3x.png"; sourceTree = "<group>"; };
+		B06C8F8B2507C3390042B7F3 /* MPCloseButtonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseButtonX.png; sourceTree = "<group>"; };
 		B23C3B4E1E353DD90003D79E /* MPVideoConfigTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPVideoConfigTests.m; sourceTree = "<group>"; };
 		B23C3B521E353FD20003D79E /* linear-tracking.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "linear-tracking.xml"; sourceTree = "<group>"; };
 		B23C3B5A1E35709D0003D79E /* linear-tracking-no-event.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "linear-tracking-no-event.xml"; sourceTree = "<group>"; };
@@ -2257,6 +2263,9 @@
 				B257A3061BA3911300F5D320 /* MPUnmutedBtn.png */,
 				B257A3071BA3911300F5D320 /* MPUnmutedBtn@2x.png */,
 				B257A3081BA3911300F5D320 /* MPUnmutedBtn@3x.png */,
+				B06C8F8B2507C3390042B7F3 /* MPCloseButtonX.png */,
+				B06C8F892507C3390042B7F3 /* MPCloseButtonX@2x.png */,
+				B06C8F8A2507C3390042B7F3 /* MPCloseButtonX@3x.png */,
 				57214DE61A66FB4C0075BF95 /* MRAID.bundle */,
 			);
 			path = Resources;
@@ -3219,17 +3228,20 @@
 				2A711FE0202267B6007A2412 /* MPMutedBtn.png in Resources */,
 				2A711FE1202267B6007A2412 /* MPMutedBtn@2x.png in Resources */,
 				2A711FE2202267B6007A2412 /* MPMutedBtn@3x.png in Resources */,
+				B06C8F8D2507C3390042B7F3 /* MPCloseButtonX@3x.png in Resources */,
 				2A711FE3202267B6007A2412 /* MPPlayBtn.png in Resources */,
 				ECFDCF862459EC80003E2D75 /* MPAssets.xcassets in Resources */,
 				2A711FE4202267B6007A2412 /* MPPlayBtn@2x.png in Resources */,
 				2A711FE5202267B6007A2412 /* MPPlayBtn@3x.png in Resources */,
 				2A711FE6202267B6007A2412 /* MPUnmutedBtn.png in Resources */,
 				2A711FE7202267B6007A2412 /* MPUnmutedBtn@2x.png in Resources */,
+				B06C8F8E2507C3390042B7F3 /* MPCloseButtonX.png in Resources */,
 				2A711FE8202267B6007A2412 /* MPUnmutedBtn@3x.png in Resources */,
 				2A711FE9202267B6007A2412 /* MRAID.bundle in Resources */,
 				2A711FED202267B6007A2412 /* MPDAAIcon.png in Resources */,
 				2A711FEE202267B6007A2412 /* MPDAAIcon@2x.png in Resources */,
 				2A711FEF202267B6007A2412 /* MPDAAIcon@3x.png in Resources */,
+				B06C8F8C2507C3390042B7F3 /* MPCloseButtonX@2x.png in Resources */,
 				BC9EF9E0216811B3005BEA65 /* MPAdapters.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

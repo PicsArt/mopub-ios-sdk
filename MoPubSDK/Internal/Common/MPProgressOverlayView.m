@@ -10,6 +10,7 @@
 #import "MPProgressOverlayView.h"
 #import "MPGlobal.h"
 #import "UIImage+MPAdditions.h"
+#import "MPNativeAdConstants.h"
 
 // Constants
 #define kProgressOverlayAlpha               0.6f
@@ -52,7 +53,7 @@
             button.hidden = YES;    // Set to hidden to participate in autoresizing, but not capture user input
 
             [button addTarget:self action:@selector(closeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-            [button setImage:[UIImage imageForAsset:kMPImageAssetCloseButton] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageWithContentsOfFile:MPResourcePathForResource(kCloseButtonImageName)] forState:UIControlStateNormal];
             [button sizeToFit];
             button;
         });

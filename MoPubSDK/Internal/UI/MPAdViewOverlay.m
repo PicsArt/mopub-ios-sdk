@@ -17,6 +17,7 @@
 #import "UIButton+MPAdditions.h"
 #import "UIImage+MPAdditions.h"
 #import "UIView+MPAdditions.h"
+#import "MPNativeAdConstants.h"
 
 static CGFloat const kRectangleButtonPadding = 16;
 static CGFloat const kSkipButtonDimension = 50; // 50x50, same size as the Close button
@@ -189,7 +190,8 @@ static CGFloat const kSkipButtonDimension = 50; // 50x50, same size as the Close
             self.skipButton.hidden = YES; // avoid overlapping
             self.timerView.hidden = YES; // avoid overlapping
             self.closeButton.hidden = NO;
-            [self.closeButton setImage:[UIImage imageForAsset:kMPImageAssetCloseButton] forState:UIControlStateNormal];
+            [self.closeButton setImage:[UIImage imageWithContentsOfFile:MPResourcePathForResource(kCloseButtonImageName)]
+                              forState:UIControlStateNormal];
             break;
     }
 }

@@ -132,7 +132,7 @@ static NSTimeInterval const kCloseButtonFadeInAfterSeconds = 10.0;
                                         kCloseButtonDimension,
                                         kCloseButtonDimension);
     self.closeButton.backgroundColor = [UIColor clearColor];
-    [self.closeButton setImage:[UIImage imageForAsset:kMPImageAssetCloseButton] forState:UIControlStateNormal];
+    [self.closeButton setImage:[UIImage imageWithContentsOfFile:MPResourcePathForResource(kCloseButtonImageName)] forState:UIControlStateNormal];
     [self.closeButton addTarget:self
                          action:@selector(closeButtonAction:)
                forControlEvents:UIControlEventTouchUpInside];

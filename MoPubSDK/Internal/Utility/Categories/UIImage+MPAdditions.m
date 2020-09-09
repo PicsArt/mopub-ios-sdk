@@ -9,7 +9,7 @@
 #import "NSBundle+MPAdditions.h"
 #import "UIImage+MPAdditions.h"
 
-MPImageAsset const kMPImageAssetCloseButton = @"MPCloseButton";
+//MPImageAsset const kMPImageAssetCloseButton = @"MPCloseButton";
 MPImageAsset const kMPImageAssetSkipButton = @"MPSkipButton";
 
 @implementation UIImage (MPAdditions)

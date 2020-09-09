@@ -18,7 +18,7 @@ typedef NSString * MPImageAsset;
  close event region should be 50x50 for expandable and fullscreen ads. On page 34, the 50x50 size
  applies to resized ads as well. For VAST (v3 ~ v4.2), close event region is not specified.
  */
-extern MPImageAsset const kMPImageAssetCloseButton;
+//extern MPImageAsset const kMPImageAssetCloseButton;
 
 /**
  This is the image asset for the Skip button. The size of the image asset is 32x32, and the event

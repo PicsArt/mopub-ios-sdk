@@ -30,6 +30,7 @@ NSString *const kAdPrivacyIconUIImageKey  = @"privacyiconuiimage";
 NSString *const kAdPrivacyIconClickUrlKey = @"privacyclkurl";
 
 NSString *const kPrivacyIconImageName         = @"MPDAAIcon@2x.png";
+NSString *const kCloseButtonImageName         = @"MPCloseButtonX.png";
 NSString *const kPrivacyIconTapDestinationURL = @"https://www.mopub.com/optout";
 NSString *const kDefaultActionURLKey          = @"clk";
 NSString *const kClickTrackerURLKey           = @"clktracker";
